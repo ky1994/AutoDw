@@ -18,6 +18,8 @@ if [[ ${selection} == 'yes' ]]; then
 	echo "you can tail -f  /root/AutoDw/log/web.log file to get the recent message in another console."
 	echo "你可以在新窗口上通过tail -f /root/AutoDw/log/web.log命令获取最近安装信息"
 	echo "..............please wait............请稍后..............."
+
+	./bin/web/install_web.sh
 else
 	echo "canceled.已经取消"
 fi
