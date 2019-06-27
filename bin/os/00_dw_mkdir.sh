@@ -1,4 +1,7 @@
 #!/bin/bash
+
+echo $(date +%Y-%m-%d\ %H:%M:%S)'，00_dw_mkdir begin'
+
 start_partition=$1
 end_partition=$2
 is_etl=$3
@@ -147,4 +150,6 @@ if [ ! -d ${dump_dir} ];then
         echo "dir /${outer_dir}/${dump_dir} not exist, create dir /${outer_dir}/${dump_dir}"
 fi
 
+
+echo $(date +%Y-%m-%d\ %H:%M:%S)'，00_dw_mkdir end'
 exit    0

@@ -17,7 +17,8 @@
         + [Python-3.6.4.tgz，python3.6]
         + [zlib-1.2.11.tar.gz，zlib依赖]
 + [res，应用jar包]
-    + [etl.jar，etl包]
+    + [etl.jar，etl的jar包]
+    + [DIM.jar，监控平台jar包]
 
 # hostname
 数仓集群根据hostname区分master，slaver节点，默认sjck-node00是主节点，01，02等是子节点，01是部署监控平台的节点
