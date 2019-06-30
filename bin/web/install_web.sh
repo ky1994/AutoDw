@@ -2,7 +2,7 @@
 
 echo $(date +%Y-%m-%d\ %H:%M:%S)'，install_web begin'
 
-#./bin/web/00_jdk1.7.sh >> ./log/web.log 2>&1;
+./bin/web/00_jdk1.7.sh >> ./log/web.log 2>&1;
 #01节点部署psql，监控平台
 if [ hostname = "sjck-node01" ];then
         echo "01"
@@ -17,6 +17,6 @@ if [ hostname = "sjck-node00" ];then
         #./bin/web/04_etl.sh >> ./log/web.log 2>&1;
 fi
 
-echo $(date +%Y-%m-%d\ %H:%M:%S)'，install_web begin'
+echo $(date +%Y-%m-%d\ %H:%M:%S)'，install_web end'
 
 exit    0
